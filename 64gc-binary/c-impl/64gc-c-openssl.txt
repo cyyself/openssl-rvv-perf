@@ -1,0 +1,8 @@
+version: 3.4.0-dev
+built on: Fri Apr 12 07:36:58 2024 UTC
+options: bn(64,64)
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -O3 -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_BUILDING_OPENSSL -DNDEBUG
+CPUINFO: N/A
+The 'numbers' are in 1000s of bytes per second processed.
+type             16 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes  16384 bytes
+ChaCha20-Poly1305    32464.89k    51110.12k    58540.03k    60470.61k    61140.62k    60932.10k

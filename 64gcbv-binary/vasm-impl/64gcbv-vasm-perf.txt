@@ -1,0 +1,611 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 71K of event 'cycles:P'
+# Event count (approx.): 28317591015
+#
+# Children      Self  Command  Shared Object                Symbol                                                                                                                                                                                 
+# ........  ........  .......  ...........................  .......................................................................................................................................................................................
+#
+    34.12%    34.05%  openssl  libcrypto.so.3               [.] Poly1305_Update
+            |          
+            |--33.04%--Poly1305_Update
+            |          
+             --1.08%--chacha20_poly1305_aead_cipher
+                       Poly1305_Update
+
+    14.62%    14.50%  openssl  libcrypto.so.3               [.] ChaCha20_ctr32_c
+            |          
+            |--13.50%--ChaCha20_ctr32_c
+            |          
+             --1.12%--chacha20_cipher
+                       ChaCha20_ctr32_c
+
+     6.59%     2.25%  openssl  libcrypto.so.3               [.] chacha20_poly1305_aead_cipher
+            |          
+            |--5.45%--chacha20_poly1305_aead_cipher
+            |          |          
+            |          |--3.24%--chacha20_cipher
+            |          |          
+            |          |--1.09%--Poly1305_Update
+            |          |          
+            |           --0.57%--chacha20_poly1305_aead_cipher
+            |          
+             --1.14%--chacha20_poly1305_cipher
+                       chacha20_poly1305_aead_cipher
+
+     5.49%     3.60%  openssl  libcrypto.so.3               [.] chacha20_cipher
+            |          
+            |--3.22%--chacha20_poly1305_aead_cipher
+            |          chacha20_cipher
+            |          
+             --2.25%--chacha20_cipher
+                       |          
+                        --1.13%--ChaCha20_ctr32_c
+
+     2.88%     2.88%  openssl  libcrypto.so.3               [.] $d
+            |
+            ---$d
+
+     2.86%     2.86%  openssl  libcrypto.so.3               [.] $d
+            |
+            ---$d
+
+     2.83%     2.82%  openssl  libcrypto.so.3               [.] $d
+            |
+            ---$d
+
+     2.81%     2.81%  openssl  libcrypto.so.3               [.] $d
+            |
+            ---$d
+
+     2.78%     2.78%  openssl  libcrypto.so.3               [.] $d
+            |
+            ---$d
+
+     2.77%     2.77%  openssl  libcrypto.so.3               [.] $d
+            |
+            ---$d
+
+     2.75%     1.68%  openssl  libcrypto.so.3               [.] EVP_EncryptUpdate
+            |          
+             --2.25%--EVP_EncryptUpdate
+                       |          
+                        --1.06%--chacha20_poly1305_cipher
+
+     2.66%     2.66%  openssl  libcrypto.so.3               [.] $d
+            |
+            ---$d
+
+     2.64%     2.64%  openssl  libcrypto.so.3               [.] $d
+            |
+            ---$d
+
+     2.58%     1.43%  openssl  libcrypto.so.3               [.] chacha20_poly1305_cipher
+            |          
+            |--1.52%--chacha20_poly1305_cipher
+            |          |          
+            |           --1.14%--chacha20_poly1305_aead_cipher
+            |          
+             --1.05%--EVP_EncryptUpdate
+                       chacha20_poly1305_cipher
+
+     0.96%     0.45%  openssl  openssl                      [.] EVP_Update_loop
+            |
+            ---EVP_Update_loop
+               |          
+                --0.50%--EVP_EncryptUpdate
+
+     0.61%     0.61%  openssl  libcrypto.so.3               [.] $x
+            |
+            ---$x
+
+     0.49%     0.49%  openssl  libcrypto.so.3               [.] $x
+     0.48%     0.48%  openssl  libcrypto.so.3               [.] $d
+     0.42%     0.42%  openssl  libcrypto.so.3               [.] $x
+     0.33%     0.33%  openssl  libcrypto.so.3               [.] $x
+     0.31%     0.28%  openssl  libcrypto.so.3               [.] ChaCha20_ctr32
+     0.31%     0.30%  openssl  libcrypto.so.3               [.] $x
+     0.29%     0.29%  openssl  libcrypto.so.3               [.] $x
+     0.29%     0.29%  openssl  libcrypto.so.3               [.] $x
+     0.29%     0.28%  openssl  libcrypto.so.3               [.] $d
+     0.29%     0.29%  openssl  libcrypto.so.3               [.] $x
+     0.28%     0.28%  openssl  libcrypto.so.3               [.] $x
+     0.28%     0.28%  openssl  libcrypto.so.3               [.] $d
+     0.28%     0.28%  openssl  libcrypto.so.3               [.] $x
+     0.28%     0.28%  openssl  libcrypto.so.3               [.] $x
+     0.28%     0.28%  openssl  libcrypto.so.3               [.] $x
+     0.27%     0.27%  openssl  libcrypto.so.3               [.] $d
+     0.27%     0.27%  openssl  libcrypto.so.3               [.] $x
+     0.27%     0.27%  openssl  libcrypto.so.3               [.] $d
+     0.27%     0.27%  openssl  libcrypto.so.3               [.] $x
+     0.27%     0.27%  openssl  libcrypto.so.3               [.] $x
+     0.27%     0.27%  openssl  libcrypto.so.3               [.] $x
+     0.27%     0.27%  openssl  libcrypto.so.3               [.] $d
+     0.27%     0.27%  openssl  libcrypto.so.3               [.] $d
+     0.27%     0.27%  openssl  libcrypto.so.3               [.] $x
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $x
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $d
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $x
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $x
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $x
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $x
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $d
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $x
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $d
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $d
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $x
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $x
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $d
+     0.26%     0.26%  openssl  libcrypto.so.3               [.] $x
+     0.25%     0.25%  openssl  libcrypto.so.3               [.] $x
+     0.25%     0.25%  openssl  libcrypto.so.3               [.] $d
+     0.25%     0.25%  openssl  libcrypto.so.3               [.] $d
+     0.25%     0.25%  openssl  libcrypto.so.3               [.] $x
+     0.25%     0.25%  openssl  libcrypto.so.3               [.] $x
+     0.25%     0.25%  openssl  libcrypto.so.3               [.] $x
+     0.25%     0.25%  openssl  libcrypto.so.3               [.] $x
+     0.24%     0.24%  openssl  libcrypto.so.3               [.] $x
+     0.24%     0.24%  openssl  libcrypto.so.3               [.] $x
+     0.24%     0.24%  openssl  libc.so.6                    [.] memset
+     0.24%     0.24%  openssl  libcrypto.so.3               [.] $x
+     0.24%     0.24%  openssl  libcrypto.so.3               [.] $x
+     0.23%     0.23%  openssl  libcrypto.so.3               [.] $x
+     0.23%     0.23%  openssl  libcrypto.so.3               [.] $x
+     0.23%     0.23%  openssl  libcrypto.so.3               [.] $x
+     0.22%     0.00%  openssl  [kernel.kallsyms]            [k] call_on_irq_stack
+     0.22%     0.00%  openssl  [kernel.kallsyms]            [k] __noinstr_text_start
+     0.22%     0.00%  openssl  [kernel.kallsyms]            [k] irq_exit_rcu
+     0.22%     0.08%  openssl  [kernel.kallsyms]            [k] __softirqentry_text_start
+     0.21%     0.21%  openssl  libcrypto.so.3               [.] $d
+     0.21%     0.21%  openssl  libcrypto.so.3               [.] $d
+     0.16%     0.16%  openssl  libcrypto.so.3               [.] $x
+     0.15%     0.15%  openssl  libcrypto.so.3               [.] $x
+     0.15%     0.15%  openssl  libcrypto.so.3               [.] $d
+     0.15%     0.15%  openssl  libcrypto.so.3               [.] $x
+     0.14%     0.14%  openssl  libcrypto.so.3               [.] $d
+     0.14%     0.14%  openssl  libcrypto.so.3               [.] $d
+     0.13%     0.13%  openssl  libcrypto.so.3               [.] $x
+     0.13%     0.13%  openssl  libcrypto.so.3               [.] $d
+     0.13%     0.13%  openssl  libcrypto.so.3               [.] $d
+     0.13%     0.13%  openssl  libcrypto.so.3               [.] $x
+     0.13%     0.13%  openssl  libcrypto.so.3               [.] $x
+     0.12%     0.12%  openssl  libcrypto.so.3               [.] $d
+     0.12%     0.12%  openssl  libcrypto.so.3               [.] $x
+     0.12%     0.12%  openssl  libcrypto.so.3               [.] $x
+     0.11%     0.11%  openssl  libcrypto.so.3               [.] $d
+     0.11%     0.11%  openssl  libcrypto.so.3               [.] $x
+     0.09%     0.00%  openssl  [kernel.kallsyms]            [k] net_rx_action
+     0.09%     0.00%  openssl  [kernel.kallsyms]            [k] __napi_poll
+     0.09%     0.00%  openssl  [kernel.kallsyms]            [k] r8152_poll
+     0.08%     0.08%  openssl  openssl                      [.] OSSL_STORE_unregister_loader@plt
+     0.08%     0.08%  openssl  libcrypto.so.3               [.] ChaCha20_ctr32_v
+     0.07%     0.00%  openssl  [kernel.kallsyms]            [k] napi_complete_done
+     0.06%     0.00%  openssl  [kernel.kallsyms]            [k] netif_receive_skb_list_internal
+     0.06%     0.00%  openssl  [kernel.kallsyms]            [k] __netif_receive_skb_list_core
+     0.06%     0.00%  openssl  [kernel.kallsyms]            [k] ip_list_rcv
+     0.06%     0.06%  openssl  libcrypto.so.3               [.] $x
+     0.06%     0.06%  openssl  libcrypto.so.3               [.] signal@plt
+     0.06%     0.00%  openssl  [kernel.kallsyms]            [k] ip_list_rcv_finish.constprop.0
+     0.06%     0.06%  openssl  libcrypto.so.3               [.] $x
+     0.05%     0.05%  openssl  libcrypto.so.3               [.] ossl_prov_is_running
+     0.05%     0.00%  openssl  [kernel.kallsyms]            [k] ip_sublist_rcv_finish
+     0.05%     0.00%  openssl  [kernel.kallsyms]            [k] ip_local_deliver
+     0.05%     0.00%  openssl  [kernel.kallsyms]            [k] ip_protocol_deliver_rcu
+     0.05%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_v4_rcv
+     0.05%     0.05%  openssl  libcrypto.so.3               [.] $x
+     0.04%     0.04%  openssl  libcrypto.so.3               [.] $x
+     0.04%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_rcv_established
+     0.04%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_v4_do_rcv
+     0.04%     0.04%  openssl  libcrypto.so.3               [.] $x
+     0.04%     0.00%  openssl  [kernel.kallsyms]            [k] tasklet_action_common.isra.0
+     0.03%     0.03%  openssl  libcrypto.so.3               [.] $x
+     0.03%     0.03%  openssl  libcrypto.so.3               [.] $x
+     0.03%     0.03%  openssl  libcrypto.so.3               [.] $d
+     0.03%     0.00%  openssl  [kernel.kallsyms]            [k] ret_from_exception
+     0.03%     0.03%  openssl  libcrypto.so.3               [.] $d
+     0.03%     0.03%  openssl  libcrypto.so.3               [.] $x
+     0.03%     0.03%  openssl  libcrypto.so.3               [.] $x
+     0.03%     0.03%  openssl  libcrypto.so.3               [.] $x
+     0.03%     0.03%  openssl  [kernel.kallsyms]            [k] _raw_spin_unlock_irqrestore
+     0.03%     0.03%  openssl  libcrypto.so.3               [.] $x
+     0.03%     0.03%  openssl  libcrypto.so.3               [.] $x
+     0.03%     0.03%  openssl  libcrypto.so.3               [.] riscv_vlen
+     0.03%     0.00%  openssl  [kernel.kallsyms]            [k] tasklet_action
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.00%  openssl  [kernel.kallsyms]            [k] usb_giveback_urb_bh
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $d
+     0.02%     0.00%  openssl  [kernel.kallsyms]            [k] __usb_hcd_giveback_urb
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $d
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.01%  openssl  [kernel.kallsyms]            [k] tcp_ack
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $d
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $d
+     0.02%     0.00%  openssl  [kernel.kallsyms]            [k] do_trap_ecall_u
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $x
+     0.02%     0.02%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] usb_submit_urb
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.00%  openssl  [unknown]                    [k] 0xbff94b8180826125
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] tasklet_hi_action
+     0.01%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b49d0ec
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.00%  openssl  libcrypto.so.3               [.] $xrv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_v1p0_zicsr2p0_zifencei2p0_zmmul1p0_zba1p0_zbb1p0_zbc1p0_zbs1p0_zve32f1p0_zve32x1p0_zve64d1p0_zve64f1p0_zve64x1p0_zvl128b1p0_zvl32b1p0_zvl64b1p0
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_data_queue
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] bottom_half
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] do_irq
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] irqentry_exit_to_user_mode
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] irqentry_exit
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] run_timer_softirq
+     0.01%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b49f5bc
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] __handle_mm_fault
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] do_page_fault
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] handle_page_fault
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] handle_mm_fault
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] usb_hcd_submit_urb
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] napi_gro_receive
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] __kfree_skb
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_write_xmit
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] intr_callback
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] ip_rcv_finish_core.constprop.0
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] r8152_submit_rx
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] __napi_alloc_skb
+     0.01%     0.00%  openssl  libcrypto.so.3               [.] OPENSSL_LH_doall_arg_thunk
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] dev_gro_receive
+     0.01%     0.01%  openssl  [kernel.kallsyms]            [k] queue_work_on
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $x
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.01%  openssl  libcrypto.so.3               [.] $d
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] dwc2_unmap_urb_for_dma
+     0.01%     0.01%  openssl  [kernel.kallsyms]            [k] finish_task_switch.isra.0
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] schedule
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] __schedule
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_data_ready
+     0.01%     0.00%  openssl  [kernel.kallsyms]            [k] xs_data_ready
+     0.00%     0.00%  openssl  libc.so.6                    [.] free
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] _dwc2_hcd_urb_enqueue
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] memcpy
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x000000000000a53e
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b49753e
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] call_timer_fn
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] $x
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] usb_hcd_unmap_urb_for_dma
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] dma_unmap_page_attrs
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] dma_map_page_attrs
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] dwc2_map_urb_for_dma
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __riscv_sys_openat
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] do_sys_openat2
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] do_filp_open
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] path_openat
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] do_name
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_queue_rcv
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] ossl_lh_strcasehash
+     0.00%     0.00%  openssl  [unknown]                    [.] 0x50b174cd2ab5687b
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] ossl_sa_doall_arg
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] filemap_map_pages
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] inet_gro_receive
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_tasklet_func
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_tsq_handler
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_tsq_write.part.0
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __tcp_push_pending_frames
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __tcp_transmit_skb
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] pid_child_should_wake
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] do_group_exit
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] do_exit
+     0.00%     0.00%  openssl  libc.so.6                    [.] write
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __riscv_sys_write
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] ksys_write
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] vfs_write
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tty_write
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] file_tty_write.isra.0
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] n_tty_write
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] skb_release_data
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] $d
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b4a1aee
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] ip_route_use_hint
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] fib_validate_source
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __fib_validate_source
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000003f8af0810e
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] rcu_core
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] rcu_core_si
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] kmalloc_trace
+     0.00%     0.00%  openssl  libc.so.6                    [.] strlen
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] skb_free_head
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] raw_local_deliver
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __alloc_pages
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] kmem_cache_alloc_bulk
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] napi_skb_cache_get
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] vfs_open
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] do_dentry_open
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] nfs4_file_open
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] ip_rcv_core
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] def_load_bio
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_try_rmem_schedule
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] usb_hcd_map_urb_for_dma
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] OPENSSL_LH_insert
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b493672
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b4912e6
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b4a19a4
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] OPENSSL_LH_strhash
+     0.00%     0.00%  openssl  [unknown]                    [.] 0x0000000000000071
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_trim_head
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] ip_queue_xmit
+     0.00%     0.00%  openssl  openssl                      [.] speed_main
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_filter
+     0.00%     0.00%  openssl  [unknown]                    [k] 0x00332e6f732e6f74
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] memset
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] kmem_cache_free
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] kfree_skbmem
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] ktime_get_mono_fast_ns
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_gro_receive
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] mmput
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] exit_mmap
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b497558
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b4972b6
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b495292
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] sock_put
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_delack_timer
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_delack_timer_handler
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_send_ack
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __tcp_send_ack.part.0
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] pty_write
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tty_insert_flip_string_and_push_buffer
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] BIO_write
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] arch_sync_dma_for_cpu
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __netif_receive_skb_core.constprop.0
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] lock_timer_base
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_schedule_loss_probe
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] sk_reset_timer
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] mod_timer
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __mod_timer
+     0.00%     0.00%  openssl  libc.so.6                    [.] alarm
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] $x
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] $d
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] rb_erase
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] try_to_wake_up
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] process_timeout
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] wake_up_process
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] map_id_range_down
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] make_kuid
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] read_bulk_callback
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] mutex_lock
+     0.00%     0.00%  openssl  [unknown]                    [.] 0x0000000000000031
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000003f8aedecde
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __kmalloc
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] wake_up_var
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tasklet_clear_sched
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] fib_table_lookup
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] ossl_sa_set
+     0.00%     0.00%  openssl  openssl                      [.] 0x0000002ae50da560
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] CRYPTO_malloc
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] CRYPTO_zalloc
+     0.00%     0.00%  openssl  libc.so.6                    [.] pthread_rwlock_unlock
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] CRYPTO_THREAD_unlock
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] evp_signature_from_algorithm
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] _dopr
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] BIO_gets
+     0.00%     0.00%  openssl  libc.so.6                    [.] pthread_rwlock_wrlock
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] CRYPTO_THREAD_write_lock
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] nfs4_open_release
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] nfs4_atomic_open
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] nfs4_do_open.constprop.0
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] nfs4_run_open_task
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] rpc_put_task
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] OPENSSL_strcasecmp
+     0.00%     0.00%  openssl  libc.so.6                    [.] open64
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] alloc_nfs_open_context
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] CRYPTO_THREAD_run_once
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] $xrv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_v1p0_zicsr2p0_zifencei2p0_zmmul1p0_zba1p0_zbb1p0_zbc1p0_zbs1p0_zve32f1p0_zve32x1p0_zve64d1p0_zve64f1p0_zve64x1p0_zvl128b1p0_zvl32b1p0_zvl64b1p0
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] fmtint
+     0.00%     0.00%  openssl  libc.so.6                    [.] strcpy
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] CRYPTO_strdup
+     0.00%     0.00%  openssl  openssl                      [.] wait@plt
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] ip_send_check
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] OBJ_NAME_get
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] $xrv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_v1p0_zicsr2p0_zifencei2p0_zmmul1p0_zba1p0_zbb1p0_zbc1p0_zbs1p0_zve32f1p0_zve32x1p0_zve64d1p0_zve64f1p0_zve64x1p0_zvl128b1p0_zvl32b1p0_zvl64b1p0
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] obj_name_hash
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] err_string_data_hash
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] recvmmsg@plt
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] _raw_spin_lock_irqsave
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] evp_names_do_all
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] evp_cipher_from_algorithm
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] folio_add_file_rmap_ptes
+     0.00%     0.00%  openssl  openssl                      [.] main
+     0.00%     0.00%  openssl  libc.so.6                    [.] getenv
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] set_pte_range
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000000000077520
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000003f8af07520
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] OSSL_PARAM_set_uint64
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] ossl_cipher_generic_get_params
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000000000076c00
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000003f8af06c00
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] next_uptodate_folio
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b49eb5e
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b49eba8
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] filemap_get_pages
+     0.00%     0.00%  openssl  libc.so.6                    [.] _IO_file_underflow
+     0.00%     0.00%  openssl  libc.so.6                    [.] read
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __riscv_sys_read
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] ksys_read
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] vfs_read
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] nfs_file_read
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] generic_file_read_iter
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] filemap_read
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] nfs_permission
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] link_path_walk.part.0.constprop.0
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] ossl_err_load_ERR_strings
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __tcp_select_window
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] namenum_hash
+     0.00%     0.00%  openssl  libc.so.6                    [.] malloc
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] sk_filter_trim_cap
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] napi_get_frags
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000000000007322
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b494926
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b494322
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __mt_destroy
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b4928c8
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __riscv_sys_mmap
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] ksys_mmap_pgoff
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] vm_mmap_pgoff
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] do_mmap
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] mmap_region
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] do_vmi_munmap
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] OBJ_nid2obj
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] OBJ_nid2sn
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __mod_node_page_state
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __sk_mem_raise_allocated
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] net_tx_action
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_tso_segs
+     0.00%     0.00%  openssl  libc.so.6                    [.] memcpy
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000003f8af10dba
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] mas_wr_node_store
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b4970aa
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b4a1b1c
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __riscv_sys_mprotect
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] do_mprotect_pkey.constprop.0
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] mprotect_fixup
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] vma_modify
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __split_vma
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] vma_complete
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] mas_store_prealloc
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] mas_wr_store_entry.isra.0
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x00000000000a94f6
+     0.00%     0.00%  openssl  libc.so.6                    [.] __cxa_finalize
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000003f8af394f6
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_wfree
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] dev_kfree_skb_any_reason
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] kfree_skb_reason
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] EVP_CipherInit_ex
+     0.00%     0.00%  openssl  [unknown]                    [.] 0x0000000000000411
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] free_swap_cache
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] unmap_page_range
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tlb_finish_mmu
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tlb_batch_pages_flush
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] free_pages_and_swap_cache
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] unmap_vmas
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __riscv_sys_getrandom
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000003f8af05af8
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __pskb_trim_head
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000000000076c06
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000003f8af06c06
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] OPENSSL_LH_flush
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x000000000006db4e
+     0.00%     0.00%  openssl  libc.so.6                    [.] 0x0000003f8aefdb4e
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] ipv4_dst_check
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] flush_icache_pte
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b49752a
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __flush_tlb_range
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b497696
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b4974de
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] do_wp_page
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] ptep_clear_flush
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] flush_tlb_page
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] names_lh_free_doall
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x000000000000a552
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b497552
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] skb_try_coalesce
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] tcp_try_coalesce
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] skb_clone
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] property_free
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __ip_local_out
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __ip_queue_xmit
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x000000000000a532
+     0.00%     0.00%  openssl  ld-linux-riscv64-lp64d.so.1  [.] 0x0000003f8b497532
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] exit_files
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] put_files_struct.part.0
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] filp_close
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] filp_flush
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] nfs4_file_flush
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] nfs_wb_all
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] filemap_write_and_wait_range
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __filemap_fdatawrite_range
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] do_writepages
+     0.00%     0.00%  openssl  libcrypto.so.3               [.] OPENSSL_sk_free
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] write_bulk_callback
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] usb_autopm_put_interface_async
+     0.00%     0.00%  openssl  [unknown]                    [k] 0x0000003f9d9e7314
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __riscv_sys_execve
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] do_execveat_common.isra.0
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] bprm_execve
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] load_elf_binary
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] filemap_get_entry
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __clear_user
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __do_fault
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] filemap_fault
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] __filemap_get_folio
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] down_write_killable
+     0.00%     0.00%  openssl  [kernel.kallsyms]            [k] setup_arg_pages
+     0.00%     0.00%  perf-ex  [unknown]                    [k] 0x0000003f9d9e7314
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]            [k] ret_from_exception
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]            [k] do_trap_ecall_u
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]            [k] __riscv_sys_execve
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]            [k] do_execveat_common.isra.0
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]            [k] bprm_execve
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]            [k] load_elf_binary
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]            [k] __set_task_comm
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]            [k] perf_event_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]            [k] begin_new_exec
+
+
+#
+# (Tip: To show assembler sample contexts use perf record -b / perf script -F +brstackinsn --xed)
+#
